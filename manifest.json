@@ -1,0 +1,13 @@
+{
+  "name": "Play sound",
+  "description": "Play audio in service worker-based browser extensions",
+  "version": "1.0",
+  "manifest_version": 3,
+  "host_permissions": ["<all_urls>"],
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {},
+  "author": "guest271314"
+}
