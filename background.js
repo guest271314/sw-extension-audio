@@ -5,3 +5,5 @@ async function onClicked(tab) {
     active: true
   });
 }
+
+chrome.action.onClicked.addListener(onClicked);
