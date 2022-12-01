@@ -30,6 +30,11 @@ try {
   
     navigator.mediaSession.metadata = new MediaMetadata(metadata);
     measn.connect(ac.destination);
+    mediaElement.onended = async () => {
+      measn.disconnect();
+      await ac.close();
+      close();
+    }
     await mediaElement.play();
   } catch (err) {
     console.log(err);
