@@ -9,6 +9,8 @@
     "service_worker": "background.js",
     "type": "module"
   },
-  "action": {},
+  "action": {
+    "default_title": "Tab PiP Stream"
+  },
   "author": "guest271314"
 }
