@@ -4,9 +4,10 @@
   "version": "1.0",
   "manifest_version": 3,
   "host_permissions": ["<all_urls>"],
-  "permissions": ["tabs"],
+  "permissions": ["offscreen"],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   },
   "action": {},
   "author": "guest271314"
